@@ -7,6 +7,10 @@
     "start": "node ytdl.js",
     "postinstall": "node script/install.js"
   },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "https": "^1.0.0"
+  },
   "author": "Diegoson",
   "license": "MIT",
   "keywords": ["youtube","YouTube","nodejs","commonjs"]
