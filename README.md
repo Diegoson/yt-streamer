@@ -8,7 +8,7 @@ const { DownloadMusic, DownloadVideo} = require('yt-streamer');
 const fs = require('fs');
 
 (async () => {
-  const aud = await ytadl(videoId);
+  const aud = await DownloadMusic(videoId);
   const aud = fs.readFileSync(aud);
   //Video (default: 720p)
   const vi = await DownloadVideo(videoId, quality);
