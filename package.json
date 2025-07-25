@@ -1,0 +1,13 @@
+{
+  "name": "yt-streamer",
+  "version": "6.7.18",
+  "description": "YouTube downloader",
+  "main": "ytdl.js",
+  "scripts": {
+    "start": "node ytdl.js",
+    "postinstall": "node script/install.js"
+  },
+  "author": "Diegoson",
+  "license": "MIT",
+  "keywords": ["youtube","YouTube","nodejs","commonjs"]
+}
