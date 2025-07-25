@@ -3,12 +3,12 @@ const fs = require("fs")
 const os = require("os")
 const p = require("path")
 
-const bin = p.join(__dirname, "..", "bin")
-if (!fs.existsSync(bin)) fs.mkdirSync(bin)
+const bindir = p.join(__dirname, "..", "slice")
+if (!fs.existsSync(bindir)) fs.mkdirSync(bindir)
 const plat = os.platform()
 const win = plat === "win32"
 const file = win ? "yt-dlp.exe" : "yt-dlp"
-const out = p.join(bin, file)
+const out = p.join(bindir, file)
 const link = win
   ? "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe" // the main source 
   : "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
